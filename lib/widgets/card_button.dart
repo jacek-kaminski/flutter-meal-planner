@@ -8,26 +8,31 @@ class CardButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Theme.of(context).primaryColor.withOpacity(0.5),
-            Theme.of(context).primaryColor,
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+    return InkWell(
+      onTap: () {},
+      splashColor: Theme.of(context).primaryColor,
+      borderRadius: BorderRadius.circular(15),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Theme.of(context).primaryColor.withOpacity(0.5),
+              Theme.of(context).primaryColor,
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
         ),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      margin: EdgeInsets.fromLTRB(16, 0, 16, 16),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
             child: Text(
-          buttonText,
-          style: GoogleFonts.pacifico(),
-        )),
+              buttonText,
+              style: GoogleFonts.pacifico(fontSize: 20),
+            ),
+          ),
+        ),
       ),
     );
   }
