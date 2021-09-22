@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:meal_planner/assets/strings.dart';
 import 'package:meal_planner/utils/general_helper.dart';
-import 'package:meal_planner/widgets/expandable_fab.dart';
-import 'package:meal_planner/widgets/menu.dart';
+import 'package:meal_planner/widgets/expandable_fab_menu/expandable_fab.dart';
+import 'package:meal_planner/widgets/menu/menu.dart';
 
 import './meal_list_screen.dart';
 import './week_details_screen.dart';
 import './shopping_list_screen.dart';
-import '../expandable_fab.dart';
-import '../action_button.dart';
+import '../expandable_fab_menu/expandable_fab.dart';
+import '../expandable_fab_menu/action_button.dart';
 
 class HomeScreen extends StatelessWidget {
   void _navigateTo(BuildContext ctx, Destination destination) {
@@ -77,22 +77,17 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: appBar,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-              height: GeneralHelper.getProportionalContentHeight(
-                  mediaQuery, appBar, 0.8),
-              child: Menu()),
-        ],
+      body: Container(
+        height:
+            GeneralHelper.getProportionalContentHeight(mediaQuery, appBar, 0.8),
+        child: Menu(false, 'Today\'s'),
       ),
       floatingActionButton: ExpandableFab(
         distance: 112.0,
         children: [
           ActionButton(
             onPressed: () => _navigateTo(context, Destination.WeekDetails),
-            icon: const Icon(Icons.list_alt_rounded),
+            icon: const Icon(Icons.manage_search_rounded),
           ),
           ActionButton(
             onPressed: () => _navigateTo(context, Destination.MealList),

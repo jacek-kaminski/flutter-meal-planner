@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class Meal {
   final int id;
   final String name;
@@ -15,4 +17,10 @@ enum MealType {
   Lunch,
   Snack,
   Dinner,
+}
+
+extension MealTypeExtension on MealType {
+  String get value {
+    return describeEnum(this);
+  }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './expanding_action_button.dart';
+import 'expanding_action_button.dart';
 
 class ExpandableFab extends StatefulWidget {
   const ExpandableFab({
