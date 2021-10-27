@@ -4,11 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../models/meal.dart';
 
 class MenuItem extends StatelessWidget {
-  final MealType mealType;
+  final MealTag mealTag;
   final String? mealName;
   final bool? isExchangable;
 
-  MenuItem({required this.mealType, this.mealName, this.isExchangable});
+  MenuItem({required this.mealTag, this.mealName, this.isExchangable});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class MenuItem extends StatelessWidget {
                   onPressed: () {},
                   icon: Icon(Icons.add_circle_outline_rounded)),
             ),
-          Text(mealType.value, style: GoogleFonts.pacifico(color: Colors.amber))
+          Text(mealTag.value, style: GoogleFonts.pacifico(color: Colors.amber))
         ],
       ),
     );

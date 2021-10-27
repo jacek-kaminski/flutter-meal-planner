@@ -8,8 +8,8 @@ import 'package:meal_planner/widgets/menu/menu.dart';
 import './meal_list_screen.dart';
 import './week_details_screen.dart';
 import './shopping_list_screen.dart';
-import '../expandable_fab_menu/expandable_fab.dart';
-import '../expandable_fab_menu/action_button.dart';
+import '../widgets/expandable_fab_menu/expandable_fab.dart';
+import '../widgets/expandable_fab_menu/action_button.dart';
 
 class HomeScreen extends StatelessWidget {
   void _navigateTo(BuildContext ctx, Destination destination) {

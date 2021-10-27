@@ -1,129 +1,188 @@
 import 'models/meal.dart';
 
 const DUMMY_MEALS = const [
-  // Brekfasts
   Meal(
     id: 1,
     name: 'Pankakes',
-    type: MealType.Breakast,
+    tags: [
+      MealTag.Breakast,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 2,
     name: 'Porridge',
-    type: MealType.Breakast,
+    tags: [
+      MealTag.Breakast,
+    ],
   ),
   Meal(
     id: 3,
     name: 'Boiled Eggs',
-    type: MealType.Breakast,
+    tags: [
+      MealTag.Breakast,
+    ],
   ),
   Meal(
     id: 4,
     name: 'Scrambled eggs',
-    type: MealType.Breakast,
+    tags: [
+      MealTag.Breakast,
+      MealTag.Lunch,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 5,
     name: 'Toasts',
-    type: MealType.Breakast,
+    tags: [
+      MealTag.Breakast,
+      MealTag.Lunch,
+      MealTag.Snack,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 6,
     name: 'Sausages',
-    type: MealType.Breakast,
+    tags: [
+      MealTag.Breakast,
+      MealTag.Dinner,
+    ],
   ),
-
-  // Lunches
   Meal(
     id: 7,
     name: 'Spaghetti',
-    type: MealType.Lunch,
+    tags: [
+      MealTag.Lunch,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 8,
     name: 'Cucumber Soup',
-    type: MealType.Lunch,
+    tags: [
+      MealTag.Lunch,
+    ],
   ),
   Meal(
     id: 9,
     name: 'Chinesse chicken',
-    type: MealType.Lunch,
+    tags: [
+      MealTag.Lunch,
+    ],
   ),
   Meal(
     id: 10,
     name: 'Caesar salad',
-    type: MealType.Lunch,
+    tags: [
+      MealTag.Lunch,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 11,
     name: 'Burger',
-    type: MealType.Lunch,
+    tags: [
+      MealTag.Lunch,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 12,
     name: 'Spinach noodles',
-    type: MealType.Lunch,
+    tags: [
+      MealTag.Lunch,
+    ],
   ),
-  // Snacks
   Meal(
     id: 13,
     name: 'Apple',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+    ],
   ),
   Meal(
     id: 14,
     name: 'Banana',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+    ],
   ),
   Meal(
     id: 15,
     name: 'Yoghurt',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+    ],
   ),
   Meal(
     id: 16,
     name: 'Chips',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+    ],
   ),
   Meal(
     id: 17,
     name: 'Grapes',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+    ],
   ),
   Meal(
     id: 18,
     name: 'Snickers',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+    ],
   ),
-  // Dinners
   Meal(
     id: 19,
     name: 'Sandwich',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Breakast,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 20,
     name: 'Roasted Veggies',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 21,
     name: 'Hummus Tortillas',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Breakast,
+      MealTag.Snack,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 22,
     name: 'Fruit Salad',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Snack,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 23,
     name: 'Pizza',
-    type: MealType.Snack,
+    tags: [
+      MealTag.Lunch,
+      MealTag.Dinner,
+    ],
   ),
   Meal(
     id: 24,
-    name: 'Snickers',
-    type: MealType.Snack,
+    name: 'Cream Soup',
+    tags: [
+      MealTag.Lunch,
+      MealTag.Dinner,
+    ],
   ),
 ];
